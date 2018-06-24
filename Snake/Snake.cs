@@ -10,9 +10,13 @@ namespace Snake
 {
     class Snake : Entity
     {
+        #region Fields
+
         private List<Entity> body;
         private Board board;
         private Graphics graphics;
+
+        #endregion
 
         public Direction MovementDirection { get; set; }
 

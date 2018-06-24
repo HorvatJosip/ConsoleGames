@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CGL" Version="1.1.0" />
+    <Reference Include="CGL">
+      <HintPath>..\..\..\..\Libraries\Standard\CGL\CGL\bin\Release\netstandard2.0\CGL.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

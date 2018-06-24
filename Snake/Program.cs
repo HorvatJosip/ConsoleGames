@@ -7,16 +7,17 @@ namespace Snake
         static void Main(string[] args)
         {
             var gameRenderArea = new CGL.Rectangle(
-                0,
-                0,
-                (int)(Console.LargestWindowWidth  * 0.4),
-                (int)(Console.LargestWindowHeight * 0.4)
+                startX: 0,
+                startY: 2,
+                 width: (int)(Console.LargestWindowWidth * 0.25),
+                height: (int)(Console.LargestWindowHeight * 0.25)
             );
 
             Console.SetWindowSize(
-                gameRenderArea.Width,
-                gameRenderArea.Height
+                 width: gameRenderArea.Width,
+                height: gameRenderArea.Bottom + 1
             );
+
             Console.CursorVisible = false;
 
             Console.OutputEncoding = System.Text.Encoding.UTF8;
