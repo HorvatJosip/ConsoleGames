@@ -114,7 +114,8 @@ namespace Snake
             score = reset ? 0 : score + 1;
 
             var txtScore = new Text(txtScoreStartPosition, $"{score}", ConsoleColor.White);
-            scoreBoard.EditChangableText(EditOperation.Update, "txtScore", txtScore, true);
+            scoreBoard.EditChangableText(EditOperation.Update, "txtScore", txtScore, false);
+            scoreBoard.RedrawAll(true);
         } 
 
         #endregion
